@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b20">
+  <meta name="description" content="Uma homenagem especial para Sabrina Campelo.">
+
+  <title>Para Sabrina Campelo | Uma homenagem especial</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="universe" aria-hidden="true">
+    <div class="nebula nebula-one"></div>
+    <div class="nebula nebula-two"></div>
+    <div class="nebula nebula-three"></div>
+    <div class="stars" id="stars"></div>
+    <div class="shooting-stars" id="shootingStars"></div>
+  </div>
+
+  <div class="heart-field" id="heartField" aria-hidden="true"></div>
+
+  <audio id="backgroundMusic" loop preload="auto">
+    <source src="musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="music-button" id="musicButton" type="button" aria-label="Tocar música">
+    <span class="music-icon">♫</span>
+    <span id="musicLabel">Música</span>
+  </button>
+
+  <header class="topbar">
+    <span>UMA HOMENAGEM ESPECIAL</span>
+    <span>FEITA COM CARINHO ✦</span>
+  </header>
+
+  <main>
+
+    <!-- ENTRADA / LEITOR BIOMÉTRICO -->
+    <section class="screen active" id="intro">
+      <div class="intro-content">
+
+        <div class="universe-symbol">✧</div>
+
+        <p class="eyebrow">Uma mensagem guardada no universo</p>
+
+        <h1>
+          Existe alguém<br>
+          que merece algo <em>especial.</em>
+        </h1>
+
+        <p class="intro-description">
+          Algumas pessoas tornam o mundo mais bonito simplesmente por existirem.
+          Hoje, esta pequena experiência foi preparada para uma delas.
+        </p>
+
+        <div class="scanner-area">
+
+          <div class="scanner-orbit orbit-one"></div>
+          <div class="scanner-orbit orbit-two"></div>
+
+          <div class="scanner" id="scanner">
+            <div class="scanner-progress" id="scannerProgress"></div>
+
+            <div class="scanner-content">
+              <span class="fingerprint">◎</span>
+              <span class="scanner-percent" id="scannerPercent">0%</span>
+            </div>
+
+            <div class="scanner-line"></div>
+          </div>
+
+          <p class="scanner-status" id="scannerStatus">
+            Aguardando identificação
+          </p>
+
+        </div>
+
+        <button class="main-button" id="scanButton" type="button">
+          Iniciar experiência <span>✦</span>
+        </button>
+
+        <p class="intro-footnote">
+          Uma lembrança feita especialmente para Sabrina.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- BOAS-VINDAS -->
+    <section class="screen" id="welcome">
+      <div class="letter-card welcome-card">
+
+        <div class="card-decoration">✦</div>
+
+        <p class="eyebrow">Identidade reconhecida com carinho</p>
+
+        <div class="welcome-flower">🌷</div>
+
+        <h2>
+          Bem-vinda,<br>
+          <em>Sabrina Campelo.</em>
+        </h2>
+
+        <div class="ornament">
+          <span></span>♡<span></span>
+        </div>
+
+        <p class="letter-text">
+          Hoje o universo parece ter encontrado um motivo a mais para brilhar:
+          celebrar você, sua história e a pessoa especial que você é.
+        </p>
+
+        <p class="letter-signature">
+          Esta homenagem é sua.
+        </p>
+
+        <button class="main-button" data-go="birthday" type="button">
+          Descobrir minha homenagem <span>→</span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- ANIVERSÁRIO -->
+    <section class="screen" id="birthday">
+      <div class="content">
+
+        <p class="eyebrow">Um novo capítulo começa</p>
+
+        <div class="birthday-stars">✧　✦　✧</div>
+
+        <h2>
+          Hoje o dia é<br>
+          <em>todo seu.</em>
+        </h2>
+
+        <article class="letter-card birthday-card">
+
+          <div class="card-topline">
+            <span>UMA CARTA PARA VOCÊ</span>
+            <span>01 / 05</span>
+          </div>
+
+          <div class="card-flower">🌹</div>
+
+          <h3>
+            Feliz aniversário,<br>
+            <em>Sabrina!</em>
+          </h3>
+
+          <div class="age-number">
+            26 <span>anos</span>
+          </div>
+
+          <div class="ornament">
+            <span></span>♡<span></span>
+          </div>
+
+          <p class="letter-text">
+            Hoje é dia de celebrar os seus 26 anos, a sua caminhada,
+            suas conquistas e tudo aquilo que ainda está por florescer.
+          </p>
+
+          <p class="letter-text">
+            Que este novo ciclo chegue trazendo serenidade para o coração,
+            saúde para viver os dias, fé para continuar acreditando e motivos
+            sinceros para sorrir.
+          </p>
+
+          <p class="letter-highlight">
+            Que a vida seja generosa com você. Feliz vida! 🤍
+          </p>
+
+          <div class="card-footer">
+            Com carinho, para alguém especial ✦
+          </div>
+
+        </article>
+
+        <button class="main-button" data-go="gratitude" type="button">
+          Abrir próxima carta <span>→</span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- GRATIDÃO -->
+    <section class="screen" id="gratitude">
+      <div class="content">
+
+        <p class="eyebrow">
+          A beleza de reconhecer a própria história
+        </p>
+
+        <h2>
+          Uma vida feita<br>
+          de <em>aprendizados.</em>
+        </h2>
+
+        <article class="letter-card">
+
+          <div class="card-topline">
+            <span>02 / 05 · REFLEXÕES</span>
+            <span>✧</span>
+          </div>
+
+          <div class="card-icon">♡</div>
+
+          <h3>O valor de cada capítulo</h3>
+
+          <p class="letter-text">
+            Sabrina, é impossível olhar para trás e não perceber o quanto
+            o tempo passou depressa. A vida mudou, você também mudou.
+            Vieram experiências, desafios, despedidas e aprendizados.
+          </p>
+
+          <p class="letter-text">
+            Ao longo do caminho, você descobriu que nem tudo permanece,
+            que algumas pessoas seguem outros caminhos e que as amizades
+            verdadeiras são preciosidades. E tudo bem. Cada fase deixa
+            uma lição e ajuda a construir a pessoa que somos.
+          </p>
+
+          <p class="letter-text">
+            Hoje, mais do que fazer pedidos, este é um momento para
+            reconhecer a beleza da caminhada e agradecer por tudo
+            o que fez você chegar até aqui.
+          </p>
+
+          <p class="letter-highlight">
+            Sua história tem valor. Cada capítulo faz parte da mulher
+            que você se tornou.
+          </p>
+
+          <div class="card-footer">
+            Que você nunca deixe de florescer.
+          </div>
+
+        </article>
+
+        <button class="main-button" data-go="faith" type="button">
+          Continuar a leitura <span>→</span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- FÉ -->
+    <section class="screen" id="faith">
+      <div class="content">
+
+        <p class="eyebrow">
+          A gratidão que ilumina o caminho
+        </p>
+
+        <h2>
+          Deus esteve<br>
+          <em>em cada detalhe.</em>
+        </h2>
+
+        <article class="letter-card">
+
+          <div class="card-topline">
+            <span>03 / 05 · GRATIDÃO</span>
+            <span>✧</span>
+          </div>
+
+          <div class="card-icon">✝</div>
+
+          <h3>Um coração agradecido</h3>
+
+          <p class="letter-text">
+            Que nunca falte em seu coração a gratidão a Deus pelo dom da vida,
+            pela força que aparece nos momentos difíceis, pelos desafios que
+            ensinam e pelas bênçãos que renovam a esperança.
+          </p>
+
+          <p class="letter-text">
+            Que você consiga perceber o cuidado de Deus até nas pequenas coisas:
+            nos recomeços, nos livramentos, nas portas que se abrem e também
+            naquelas que se fecham para proteger seus passos.
+          </p>
+
+          <p class="letter-text">
+            Que a fé continue sendo abrigo quando o caminho parecer incerto
+            e luz quando os dias estiverem nublados.
+          </p>
+
+          <p class="letter-highlight">
+            Que Deus cuide de você, dos seus sonhos e de tudo aquilo
+            que seu coração guarda em silêncio.
+          </p>
+
+          <div class="card-footer">
+            Com fé, esperança e gratidão. 🤍
+          </div>
+
+        </article>
+
+        <button class="main-button" data-go="family" type="button">
+          Próxima carta <span>→</span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- FAMÍLIA -->
+    <section class="screen" id="family">
+      <div class="content">
+
+        <p class="eyebrow">
+          Os presentes que não têm preço
+        </p>
+
+        <h2>
+          O amor que faz<br>
+          <em>tudo valer a pena.</em>
+        </h2>
+
+        <article class="letter-card">
+
+          <div class="card-topline">
+            <span>04 / 05 · FAMÍLIA</span>
+            <span>♡</span>
+          </div>
+
+          <div class="card-icon">❀</div>
+
+          <h3>Os laços que a vida nos dá</h3>
+
+          <p class="letter-text">
+            Sabrina, que você nunca deixe de reconhecer o valor da sua família,
+            das pessoas que estiveram ao seu lado e daqueles que, de alguma forma,
+            fazem parte da sua história.
+          </p>
+
+          <p class="letter-text">
+            Que sua mãe continue sendo motivo de carinho e gratidão, e que você
+            encontre sempre força, acolhimento e sabedoria para enfrentar cada
+            etapa da vida.
+          </p>
+
+          <p class="letter-text">
+            A vida nem sempre acontece como imaginamos, mas existem laços que
+            merecem cuidado, respeito e consideração em qualquer circunstância.
+          </p>
+
+          <p class="letter-highlight">
+            Que nunca faltem pessoas verdadeiras, amor sincero e motivos
+            para agradecer por aqueles que fazem parte da sua caminhada.
+          </p>
+
+          <div class="card-footer">
+            Família é uma das maiores riquezas da vida. 🤍
+          </div>
+
+        </article>
+
+        <button class="main-button" data-go="son" type="button">
+          Uma carta muito especial <span>♡</span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- NOSSO FILHO -->
+    <section class="screen" id="son">
+      <div class="content">
+
+        <p class="eyebrow">
+          Um laço que o tempo não desfaz
+        </p>
+
+        <h2>
+          Existe um amor<br>
+          <em>que será para sempre.</em>
+        </h2>
+
+        <article class="letter-card son-card">
+
+          <div class="card-topline">
+            <span>05 / 05 · UM AMOR ETERNO</span>
+            <span>∞</span>
+          </div>
+
+          <div class="card-icon">♡</div>
+
+          <h3>Sobre o nosso maior presente</h3>
+
+          <p class="letter-text">
+            Sabrina, existe algo na nossa história que sempre terá um lugar
+            especial: o nosso filho. Ele é, e sempre será, uma das maiores
+            bênçãos que a vida nos permitiu viver.
+          </p>
+
+          <p class="letter-text">
+            Mesmo que nossos caminhos como casal tenham seguido direções
+            diferentes, existe um laço que jamais deixará de nos unir:
+            o amor por ele. Nenhuma distância, mudança ou diferença poderá
+            apagar a importância desse presente que compartilhamos.
+          </p>
+
+          <p class="letter-text">
+            Quero que você saiba que reconheço a importância da sua presença
+            na vida dele. Ser mãe é carregar um amor imenso, uma responsabilidade
+            que não termina e uma força que muitas vezes nem você percebe
+            que tem. Que ele sempre encontre em você carinho, proteção,
+            segurança e um abraço onde possa se sentir em casa.
+          </p>
+
+          <p class="letter-text">
+            Independentemente do que aconteceu entre nós, desejo que nunca
+            faltem respeito, diálogo e maturidade para que possamos fazer
+            o melhor por ele. Porque, acima de qualquer história que ficou
+            para trás, existe uma vida que merece todo o nosso amor.
+          </p>
+
+          <p class="letter-highlight">
+            Talvez a nossa história como casal tenha mudado, mas a história
+            que escrevemos como pais continuará sendo para sempre.
+            E o nosso filho sempre será um motivo especial para agradecer. 🤍
+          </p>
+
+          <div class="card-footer">
+            Um laço para a vida inteira. ♡
+          </div>
+
+        </article>
+
+        <button class="main-button" data-go="final" type="button">
+          Minha última mensagem para você <span>→</span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="screen final-screen" id="final">
+      <div class="final-content">
+
+        <div class="final-stars">✦　✧　✦</div>
+
+        <p class="eyebrow">
+          Uma última carta, mas não o fim da sua história
+        </p>
+
+        <h2>
+          Que seus próximos<br>
+          capítulos sejam <em>extraordinários.</em>
+        </h2>
+
+        <article class="letter-card final-card">
+
+          <div class="card-topline">
+            <span>COM TODO CARINHO</span>
+            <span>∞</span>
+          </div>
+
+          <div class="final-rose">🌹</div>
+
+          <p class="letter-text">
+            Sabrina, que seus 26 anos sejam vividos com mais leveza,
+            fé, sabedoria e muito amor.
+          </p>
+
+          <p class="letter-text">
+            Que você tenha coragem para recomeçar quando necessário,
+            serenidade para aceitar o que não pode mudar e sabedoria
+            para reconhecer tudo aquilo que realmente merece permanecer.
+          </p>
+
+          <p class="letter-text">
+            Que nunca perca a capacidade de agradecer, mesmo nos dias difíceis.
+            Quando olhar para trás, que consiga perceber quantas vezes
+            encontrou forças para continuar e quantas bênçãos fizeram
+            parte da sua caminhada.
+          </p>
+
+          <p class="letter-highlight">
+            Que venha um novo ciclo inesquecível, cheio de saúde,
+            paz, prosperidade, amor e da presença de Deus.
+          </p>
+
+          <div class="final-blessing">
+            Feliz aniversário, Sabrina Campelo! 🤍✨
+          </div>
+
+          <div class="card-footer">
+            Que a vida seja leve e bonita.
+          </div>
+
+        </article>
+
+        <div class="final-heart">♡</div>
+
+        <button class="main-button" id="restart" type="button">
+          Reviver esta homenagem <span>↺</span>
+        </button>
+
+        <button class="main-button" data-go="acai" type="button">
+          💜 Ver outra mensagem
+        </button>
+        <!-- CRÉDITO EXIBIDO SOMENTE NA ÚLTIMA TELA -->
+        <p class="developer-credit">
+          Desenvolvido por <strong>Manoel Pimentel</strong>
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- CARTA SURPRESA DO AÇAÍ -->
+    <!-- CARTA SURPRESA DO AÇAÍ -->
+    <section class="screen" id="acai">
+      <div class="content">
+
+        <p class="eyebrow">Uma última surpresa para você</p>
+
+        <div class="final-stars">✦　💜　✧</div>
+
+        <article class="letter-card welcome-card">
+
+          <div class="card-topline">
+            <span>UMA MENSAGEM MUITO IMPORTANTE</span>
+            <span>💜</span>
+          </div>
+
+          <div class="welcome-flower">🫐</div>
+
+          <h2>
+            Sabrina,<br>
+            tenho só mais um <em>pedido!</em>
+          </h2>
+
+          <div class="ornament">
+            <span></span>♡<span></span>
+          </div>
+
+          <p class="letter-text">
+            Depois de tantas palavras bonitas, declarações e desejos
+            de felicidade... chegou a hora de falar de um assunto
+            realmente sério!
+          </p>
+
+          <p class="letter-highlight">
+            Me pague um litro de açaí! 💜😂
+          </p>
+
+          <p class="letter-text">
+            Afinal, uma homenagem dessas merece pelo menos um
+            açaízinho, não é mesmo? 😁
+          </p>
+
+          <div class="final-blessing">
+            Estou aguardando! 😂💜
+          </div>
+
+          <div class="pix-area">
+            <p class="pix-message">Aceitamos Pix! 😂</p>
+
+            <button class="pix-button" id="copyPixButton" type="button" data-pix-key="9199336-5154">
+              <span>💜</span>
+              Pagar meu litro de açaí
+              <span>💸</span>
+            </button>
+
+            <p class="pix-feedback" id="pixFeedback">
+              Clique para copiar minha chave Pix!
+            </p>
+          </div>
+      
+
+          <div class="card-footer">
+            Assinado: Manoel Pimentel ✦
+          </div>
+
+        </article>
+
+        <button class="main-button" data-go="final" type="button">
+          Voltar à homenagem <span>↺</span>
+        </button>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
